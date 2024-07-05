@@ -1,65 +1,62 @@
 import 'package:flutter/material.dart';
-import 'package:untitled1/theme.dart';
+import 'package:untitled1/utils/assets.dart';
 
-enum WorkSpaces {
-  savva,
-  olluco,
-  loona,
-  folk,
-  whiteRabbit,
-  sage,
-  maya,
-  jun,
-  onest,
-  probka;
+enum Chats {
+  man1,
+  man2,
+  man3,
+  man4,
+  man5,
+  man6;
 
-  String get asValue {
+  String get asDateTime {
     switch (this) {
-      case WorkSpaces.savva:
-        return 'Savva';
-      case WorkSpaces.olluco:
-        return 'Olluco';
-      case WorkSpaces.loona:
-        return 'Loona';
-      case WorkSpaces.folk:
-        return 'Folk';
-      case WorkSpaces.whiteRabbit:
-        return 'White Rabbit';
-      case WorkSpaces.sage:
-        return 'Saga';
-      case WorkSpaces.maya:
-        return 'Maya';
-      case WorkSpaces.jun:
-        return 'Jun';
-      case WorkSpaces.onest:
-        return 'Onest';
-      case WorkSpaces.probka:
-        return 'Probka на Цветном';
+      case Chats.man1:
+        return '23 ч 43 мин';
+      case Chats.man2:
+        return '20 ч 40 мин';
+      case Chats.man3:
+        return '18 ч 40 мин';
+      case Chats.man4:
+        return '09 ч 40 мин';
+      case Chats.man5:
+        return '03 ч 04 мин';
+      case Chats.man6:
+        return '01 ч 09 мин';
     }
   }
 
-  Color get asColor {
+  String get asMessage {
     switch (this) {
-      case WorkSpaces.savva:
-        return AppColors.savva;
-      case WorkSpaces.olluco:
-        return AppColors.olluco;
-      case WorkSpaces.loona:
-        return AppColors.loona;
-      case WorkSpaces.folk:
-        return AppColors.folk;
-      case WorkSpaces.whiteRabbit:
-        return AppColors.whiteRabbit;
-      case WorkSpaces.sage:
-        return AppColors.sage;
-      case WorkSpaces.maya:
-        return AppColors.maya;
-      case WorkSpaces.jun:
-        return AppColors.jun;
-      case WorkSpaces.onest:
-        return AppColors.onest;
-      case WorkSpaces.probka:
-        return AppColors.probka;
+      case Chats.man1:
+        return 'Отлично выглядишь';
+      case Chats.man2:
+        return 'Встретимся? Я рядом';
+      case Chats.man3:
+        return 'Встретимся?';
+      case Chats.man4:
+        return 'Давно тебя хочу';
+      case Chats.man5:
+        return 'Я в ванной.. Скинь фото...';
+      case Chats.man6:
+        return 'Привет';
+    }
+  }
+
+  Widget get asImage {
+    switch (this) {
+      case Chats.man1:
+        return AppIcons.man1.pngPicture;
+      case Chats.man2:
+        return AppIcons.man2.pngPicture;
+      case Chats.man3:
+        return AppIcons.man3.pngPicture;
+      case Chats.man4:
+        return AppIcons.man4.pngPicture;
+      case Chats.man5:
+        return AppIcons.man5.pngPicture;
+      case Chats.man6:
+        return AppIcons.man6.pngPicture;
     }
   }
 }

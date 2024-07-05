@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:untitled1/screens/main_screen.dart';
 import 'package:untitled1/theme.dart';
-
-import 'screens/work_space/work_space.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: AppTheme.darkTheme,
-      home: const WorkSpace(),
+      home: const MainScreen(),
     );
   }
 }
